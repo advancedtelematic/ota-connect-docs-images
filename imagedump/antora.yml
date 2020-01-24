@@ -1,0 +1,5 @@
+name: img
+title: OTA Connect Docs Images
+version: latest
+nav:
+- modules/ROOT/nav.adoc
