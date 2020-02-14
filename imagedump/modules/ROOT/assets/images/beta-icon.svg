@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="10" viewBox="0 0 28 10">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="28" height="10" fill="#00B6B2" rx="2"/>
+    <text fill="#FFF" font-family="FiraGO-SemiBold, FiraGO" font-size="9" font-weight="500" letter-spacing=".4">
+      <tspan x="3" y="10">BETA</tspan>
+    </text>
+  </g>
+</svg>
