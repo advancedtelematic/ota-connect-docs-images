@@ -1,0 +1,27 @@
+= OTA Connect Docs Imagedump
+
+This repo is for storing images that are used in the https://docs.ota.here.com/[documentation for OTA Connect].
+
+== Why does this exist?
+
+We keep the documentation in the same repos as the actual code being documented. This is a good idea for a bunch of reasons, but storing image files (or binary blobs of any kind, really) in a repo that gets cloned a lot (like https://github.com/advancedtelematic/aktualizr[aktualizr]) isn't a very good long-term solution: even after you change or delete old images, they'll still be there in the repository.
+
+But, we still wanted to keep the images we use for the docs in git. So this is an independent repo that acts more like a simple dump of images. It has a standard Antora catalog structure, and is included in the playbook for docsite builds.
+
+== Contributing
+
+=== Adding new images
+
+This repository has more relaxed rules about adding content. Adding an image is never going to break anything, so you can merge any PR that only adds images to the repo without waiting for it to be reviewed/approved by someone else.
+
+(This way also makes it easier to review pull requests for new content--you don't have to have parallel PRs in multiple repos.)
+
+=== Modifying existing images
+
+If you need to update or modify an image that is already in use, you should follow the standard process: open a PR, wait for a review, merge it after an approval.
+
+=== Deleting old images
+
+Don't.
+
+Okay, there might be a reason to do it eventually, if our image catalog gets so huge that it's unmanageable or something. But deleting images won't remove them from the git history, so it won't save space or build time, and it will be a long time before the size of the catalog is anything to worry about. Plus, remember that our docs are *versioned*: you might accidentally delete an image that isn't used in the docs for the current version, but is still needed in an older branch.
